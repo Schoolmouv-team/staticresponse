@@ -1,3 +1,3 @@
-module github.com/jdel/staticresponse
+module github.com/Schoolmouv-team/staticresponse
 
 go 1.19
