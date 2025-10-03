@@ -2,7 +2,7 @@ displayName: Static Response
 type: middleware
 iconPath: .assets/icon.png
 
-import: github.com/jdel/staticresponse
+import: github.com/Schoolmouv-team/staticresponse
 
 summary: 'Static Response Middleware'
 

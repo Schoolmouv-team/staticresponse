@@ -8,7 +8,7 @@ import (
 	"reflect"
 	"testing"
 
-	"github.com/jdel/staticresponse"
+	"github.com/Schoolmouv-team/staticresponse"
 )
 
 type TestCase struct {

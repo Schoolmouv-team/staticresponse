@@ -9,7 +9,7 @@ services:
       - "9090:9090"
     volumes:
       - /var/run/docker.sock:/var/run/docker.sock:ro
-      - .:/plugins-local/src/github.com/jdel/staticresponse:ro
+      - .:/plugins-local/src/github.com/Schoolmouv-team/staticresponse:ro
     command:
       - --log
       - --log.level=ERROR
@@ -19,10 +19,10 @@ services:
       - --providers.docker=true
       - --entrypoints.web
       - --entrypoints.web.address=:9090
-      - --experimental.localPlugins.staticresponse.moduleName=github.com/jdel/staticresponse
-      # - --experimental.plugins.staticresponse.moduleName=github.com/jdel/staticresponse
+      - --experimental.localPlugins.staticresponse.moduleName=github.com/Schoolmouv-team/staticresponse
+      # - --experimental.plugins.staticresponse.moduleName=github.com/Schoolmouv-team/staticresponse
       # - --experimental.plugins.staticresponse.version=v0.0.1
-      - --providers.file.filename=/plugins-local/src/github.com/jdel/staticresponse/example-dynamic-config.yml
+      - --providers.file.filename=/plugins-local/src/github.com/Schoolmouv-team/staticresponse/example-dynamic-config.yml
     labels:
       - traefik.http.middlewares.418teapot.plugin.staticresponse
       - traefik.http.middlewares.418teapot.plugin.staticresponse.StatusCode=418
